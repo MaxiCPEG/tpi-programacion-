@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .logo img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .register-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .register-form label,
+        .register-form input,
+        .register-form button,
+        .register-form p {
+            margin: 10px 0;
+        }
+        .register-form input {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .register-form button {
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .register-form p {
+            font-size: 12px;
+            color: #666;
+        }
+        .register-form a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body> 
+     
+    <div class="container">
+        <div class="logo">
+            <img src="col.png" alt="Logo">
+        </div>
+        <form action="registro.html" class="register-form">
+            <label for="phone">NOMBRE DE USUARIO</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="phone">CONTRASEÑA</label>
+            <input type="text" id="phone" name="phone" required>
+            <a href="file:///C:/Users/Usuario/Desktop/maximo/tpi%20de%20programacion/boletin.html"> 
+             <button type="button" id="next-btn">INICIAR SESION</button>
+            </a>
+             <label for="phone">si no tenes una cuentra, registrate</label>
+            <a href="file:///C:/Users/Usuario/Desktop/maximo/tpi%20de%20programacion/registro.html">
+            <button type="button" a id="signup-btn">REGISTRARSE</button>
+            </a>
+            <p>Al registrarte, aceptas los <a href="#">Términos, Condiciones y Políticas de Privacidad</a> de Borcelle</p>
+        </form>
+    </div>
+</body>
+</html>

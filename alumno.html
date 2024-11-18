@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas 7mo 3ra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="boletin.css">
+
+</head>
+<body>
+
+    <!-- Pestañas de clases -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, '7mo1')">alumnos</button>
+        
+    </div>
+
+    <!-- Contenido para la pestaña del 7mo 1ra -->
+    <div id="7mo1" class="tabcontent">
+        <!-- Contenedor de las notas -->
+        <div class="grades-container">
+            <!-- Tabla de calificaciones para 7mo 1ra -->
+            <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+                <tbody>
+                    <!-- Fila con el nombre del alumno y curso -->
+                    <tr class="row0">
+                        <td class="column0 style1 s">Apellido y Nombre:</td>
+                        <td class="column1 style2 s" colspan="5">
+                            <select id="nombreSelect" onchange="cambiarAlumno()">
+                                <!-- Opciones de alumnos -->
+                                <option value="0">Espinoza Natalia</option>
+                                <option value="1">Licantica Cristian</option>
+                                <option value="2">Millanao Joaquin</option>
+                                <!-- Añade más opciones si es necesario -->
+                            </select>
+                    
+                            <!-- Botón para agregar nuevos nombres -->
+                            <button onclick="agregarNombre()">Agregar Nombre</button>
+                            <input type="text" id="nuevoNombre" placeholder="Agregar nuevo nombre">
+                        </td>
+                    </tr>
+                        <td class="column6 style3 s">Curso:</td>
+                        <td class="column2 style5 s" colspan="7">7° 1° Técnica</td>
+                    </tr>
+
+                    <!-- Fila con los nombres de las materias -->
+                    <tr class="row1">
+                        <td class="column0 style4 s" colspan="2">Ciclo Superior de la ESO</td>
+                        <td class="column2 style5 s">Matemática</td>
+                        <td class="column3 style5 s">Inglés técnico</td>
+                        <td class="column4 style5 s">Marco jurídico y derechos del trabajo</td>
+                        <td class="column5 style5 s">TÉCNICA: Asistencia 2</td>
+                        <td class="column6 style5 s">TÉCNICA: Autogestión</td>
+                        <td class="column7 style5 s">TÉCNICA: Hardware 4</td>
+                        <td class="column8 style5 s">TÉCNICA: Prácticas Profesionalizantes 2</td>
+                        <td class="column9 style5 s">TÉCNICA: Programación</td>
+                        <td class="column10 style5 s">TÉCNICA: Redes 3</td>
+                        <td class="column11 style5 s">EDI: Arduino 3</td>
+                    </tr>
+
+                    <!-- Fila de notas para el 1er cuatrimestre -->
+                    <tr class="row2">
+                        <td class="column0 style6 s" rowspan="3">1° Cuatrimestre</td>
+                        <td class="column1 style7 s">1° Informe</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+
+                    <!-- Fila de notas para el 2° informe del 1er cuatrimestre -->
+                    <tr>
+                        <td class="column1 style7 s">2° Informe</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+
+                    <!-- Fila de nota final para el 1er cuatrimestre -->
+                    <tr>
+                        <td class="column1 style7 s">NOTA</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+
+                    <!-- Fila de notas para el 2do cuatrimestre -->
+                    <tr class="row2">
+                        <td class="column0 style6 s" rowspan="3">2° Cuatrimestre</td>
+                        <td class="column1 style7 s">1° Informe</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+
+                    <!-- Fila de notas para el 2° informe del 2do cuatrimestre -->
+                    <tr>
+                        <td class="column1 style7 s">2° Informe</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+
+                    <!-- Fila de nota final para el 2do cuatrimestre -->
+                    <tr>
+                        <td class="column1 style7 s">NOTA</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+
+                    <!-- Fila para la nota anual -->
+                    <tr>
+                        <td class="column0 style7 s" colspan="2">Nota Anual</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+
+                    <!-- Fila para la nota de diciembre -->
+                    <tr>
+                        <td class="column0 style7 s" colspan="2">Rec Dic</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+
+                    <!-- Fila para la nota de febrero -->
+                    <tr>
+                        <td class="column0 style7 s" colspan="2">Rec Feb</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8">></td>
+                    </tr>
+
+                    <!-- Fila para la nota final -->
+                    <tr>
+                        <td class="column0 style7 s" colspan="2">Nota Final</td>
+                        <td class="column2 style8"></td>
+                        <td class="column3 style8"></td>
+                        <td class="column4 style8"></td>
+                        <td class="column5 style8"></td>
+                        <td class="column6 style8"></td>
+                        <td class="column7 style8"></td>
+                        <td class="column8 style8"></td>
+                        <td class="column9 style8"></td>
+                        <td class="column10 style8"></td>
+                        <td class="column11 style8"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="file:///C:/Users/Usuario/Desktop/maximo/tpi%20de%20programacion/paguina%20web%202.html">
+            <button type="submit" class="save-btn">salir</button>
+            </a>
+            
+        </div>
+    </div>
+
+    <script src="boletin java.js"></script>
+</body>
+</html>
